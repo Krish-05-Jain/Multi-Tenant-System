@@ -1,0 +1,14 @@
+# Virtual Environment
+.venv/
+
+# Node Modules
+/backend/node_modules/
+/frontend/node_modules/
+
+
+# Environment Variables
+/backend/.env
+/frontend/.env
+
+#Python Cache
+__pycache__/
