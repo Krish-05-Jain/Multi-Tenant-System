@@ -8,6 +8,11 @@ load_dotenv()
 
 # Database connection URL from environment variable
 DATABASE_URL = os.getenv("DATABASE_URL")
+
+# Resolve common schema differences (e.g. postgres:// vs postgresql+psycopg2://)
+if DATABASE_URL and DATABASE_URL.startswith("postgres://"):
+    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql+psycopg2://", 1)
+
 print("DB URL:", DATABASE_URL)
 
 # Create SQLAlchemy engine
