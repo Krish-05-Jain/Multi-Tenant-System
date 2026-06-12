@@ -5,7 +5,7 @@ from sqlalchemy import (
 )
 from sqlalchemy.sql import func
 from sqlalchemy.orm import relationship
-from backend.src.db.base import Base
+from src.db.base import Base
 
 class User(Base):
     __tablename__ = "users"
