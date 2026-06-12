@@ -1,14 +1,21 @@
 # Virtual Environment
 .venv/
+venv/
 
 # Node Modules
+node_modules/
 /backend/node_modules/
 /frontend/node_modules/
-
 
 # Environment Variables
 /backend/.env
 /frontend/.env
+.env
 
-#Python Cache
+# Python Cache
 __pycache__/
+*.pyc
+
+# Local Database Files
+*.db
+*.sqlite3
